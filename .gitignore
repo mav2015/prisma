@@ -1,0 +1,5 @@
+config/
+.htaccess
+log.txt
+hostauth.json
+public/assets/upload/

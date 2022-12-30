@@ -1,0 +1,80 @@
+.card {
+    display: block;
+    padding: .5rem;
+    border-radius: .3rem;
+    /* max-width: 25rem; */
+    overflow: hidden;
+    align-items: center;
+}
+
+.card-description {
+    font-family: "Courier New", Courier, monospace;
+    width: 100%;
+    display: block;
+    /* background-color: blue;  */
+    margin-bottom: 1rem;
+    font-size: .8rem;
+    font-weight: 900;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.underlined {
+    border-width: .15rem;
+    border-color: rgba(100, 100, 150, .4);
+    border-style: none none solid none;
+}
+
+.card__section {
+    display: block;
+    /* background-color: aqua; */
+    width: 100%;
+    margin: 1rem 0;
+    padding: .3rem;
+}
+
+.card__item {
+    display: inline-block;
+}
+
+.card__item--label {
+    font-family: "Courier New", Courier, monospace;
+    width: 100%;
+    display: block;
+    font-size: .6rem;
+    font-weight: 900;
+    white-space: nowrap;
+    user-select: none;
+}
+
+.card__image--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90vw;
+}
+
+.card__image {
+    height: auto;
+    width: 90vw;
+}
+
+
+
+.st-viewMoreButton{
+    border: none;
+    font-size: .8rem;
+    background-color: transparent;
+    color:rgba(100,100,100,.8);
+    cursor: pointer;
+
+}
+
+
+@media screen and (min-width: 850px) {
+
+    .card__image {
+        height: 15rem;
+        width: auto;
+    }
+}

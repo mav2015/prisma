@@ -1,0 +1,24 @@
+.arrowup{
+    position: fixed;
+    bottom: 1rem;
+    right: 1.5rem;
+    color: rgba(50,50,120,.5);
+}
+
+
+.max10{max-width: 10rem;}.max15{max-width: 15rem;}.max20{max-width: 20rem;}.max25{max-width: 25rem;}.max30{max-width: 30rem;}.max35{max-width: 35rem;}
+.minhalf{min-width: 50%;}.minquarter{min-width: 25%;}
+
+.select{
+    background-color: transparent;
+    height: 10rem;
+}
+
+.select > option {
+    background-color: rgba(50,50,50,.1);
+    margin-top: .3rem;
+}
+
+.select > option:checked{
+    background-color: rgba(70,50,100,.4);
+}

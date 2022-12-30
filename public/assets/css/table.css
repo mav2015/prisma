@@ -1,0 +1,73 @@
+.table__container {
+    position: relative;
+    display: grid;
+    grid-auto-rows: minmax(max-content, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 10rem), 1fr));
+    grid-gap: .7rem;
+}
+
+.table {
+    display: grid;
+}
+
+.table__header {
+    display: none;
+}
+
+.table__item {
+    padding: .3rem;
+}
+
+.table__item--label {
+    font-family: "Courier New", Courier, monospace;
+    width: 100%;
+    display: block;
+    font-size: .6rem;
+    font-weight: 900;
+    white-space: nowrap;
+    user-select: none;
+}
+
+
+@media screen and (min-width: 850px) {
+
+    .table__container {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+        border-radius: 3px;
+    }
+
+    .table {
+        grid-auto-rows: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+        grid-gap: .24rem;
+        padding: .12rem 0;
+    }
+
+    .table__header {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+        grid-gap: .24rem;
+        padding: 0;
+        margin-bottom: .10rem;
+    }
+
+    .table__header--item {
+        display: flex;
+        font-weight: bold;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .table__item {
+        padding: .2rem .5rem;
+        align-items: center;
+    }
+
+    .table__item--label-hide {
+        display: none;
+    }
+}
