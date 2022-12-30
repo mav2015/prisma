@@ -346,3 +346,4 @@ Eliminar Modelo, Vista, Controlador
 Para ver la version de la consola, podemos aplicar el comando:
 
 ##### ~$php console version
+# Proyecto para generacion de promesas de pago + recibos.
